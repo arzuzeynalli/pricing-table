@@ -60,7 +60,7 @@ body {
     width: 100%;
     max-width: 960px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
     text-transform: uppercase;
 }
@@ -75,8 +75,8 @@ body {
 
 .pricing-img {
     margin-bottom: 25px;
-    width: 100%%;
     max-width: 100%;
+  
 }
 
 .pricing-header {
@@ -124,4 +124,30 @@ body {
 
 .pricing-button:hover , .pricing-button:focus{
     background-color: #e1f1ff;
+}
+
+.pricing-button.is-featured{
+    background-color: #48aaff;
+    color: white;
+}
+
+.pricing-button.is-featured:hover , .pricing-button.is-featured:focus{
+    background-color: #269aff;
+    color: white;
+}
+
+@media(min-width:900px){
+    .panel{
+        flex-direction: row;
+    }
+    .pricing-plan{
+        border-bottom: none;
+        border-right: 1px solid #e1f1ff;
+        padding: 25px 50px;
+    }
+    .pricing-plan:last-child{
+        border-right: none;
+
+    }
+     
 }
